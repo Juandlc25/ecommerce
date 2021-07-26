@@ -1,0 +1,15 @@
+.slider-container {
+  display: flex;
+  align-items: center;
+  max-width: 57rem;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.products-container {
+  display: flex;
+  overflow-y: hidden;
+}
+.products-container::-webkit-scrollbar {
+  display: none;
+}

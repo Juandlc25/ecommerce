@@ -1,0 +1,6 @@
+@import "../../styles/mixins.scss";
+
+.products {
+  width: 100%;
+  @include flex-center-column;
+}

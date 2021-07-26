@@ -1,0 +1,14 @@
+@import "../../styles/mixins.scss";
+
+.banner-img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.imgs-container {
+  width: 100%;
+  margin-bottom: 40px;
+  div {
+    padding: 20px 120px;
+    @include flex-space-between;
+  }
+}

@@ -1,0 +1,70 @@
+@import "../../styles/mixins.scss";
+
+.header {
+  width: 100%;
+  @include flex-column;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  .header-1st {
+    @include flex-space-between;
+    padding: 10px 70px;
+    background-color: #fff;
+    img {
+      height: 50px;
+    }
+    .header-1st-div {
+      @include flex-center;
+      .header-1st-div-num {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background-color: #5b17aa;
+        color: white;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        font-size: 12px;
+        @include flex-center;
+      }
+      .header-1st-div-input {
+        display: flex;
+        background-color: #eeeeee;
+        padding: 10px 15px;
+        input {
+          border: none;
+          background-color: #eeeeee;
+          width: 400px;
+          outline: none;
+        }
+      }
+      .header-1st-div-icon {
+        background-color: #dedede;
+        @include flex-center;
+        padding: 6.5px 10px;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+      .header-1st-div-btn {
+        background-color: #fff;
+        border: 1px solid black;
+        padding: 3px 10px;
+        margin-left: 20px;
+      }
+    }
+  }
+  .header-2st {
+    @include flex-center;
+    background-color: black;
+    color: #fff;
+    p {
+      padding: 0 30px;
+      border-right: 1px solid white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    p:last-child {
+      border-right: none;
+    }
+  }
+}
